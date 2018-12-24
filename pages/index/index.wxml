@@ -1,0 +1,57 @@
+
+<view class="weui-flex pad16 martop-24" wx:if='{{ymnum == 2}}'>
+    <view class="weui-flex__item">
+      <view class="weui-flex pad10 luntext">
+            <view>
+              <view class="chanp-bor">
+                <image src='/images/zixunoages.png' class='chanpimg'></image>
+              </view>
+            </view>
+            <view class="weui-flex__item">
+              <swiper class="swiper_container martop-6b pad10" vertical="true" autoplay="true" circular="true" interval="2000">
+                <block wx:for="{{msgList}}">
+                <navigator url="/pages/infoDetails/infoDetails?zxid={{item.id}}" open-type="navigate">
+                  <swiper-item>
+                  <view class="swiper_item">{{item.title}}</view>
+                  </swiper-item>
+                </navigator>
+                </block>
+              </swiper>
+            </view>
+            <view class='xqtext'>
+            <view class="martop-5" bindtap='xiangqing'>
+              详情
+            </view></view>
+        </view>
+    </view>
+</view>
+
+
+<swiper class="swiper-block martop-24" previous-margin="90rpx" next-margin="50rpx" current="0" data-index='{{index}}' bindchange="swiperChange" data-imgList='{{imgUrls}}'>
+  <block wx:for="{{imgUrls}}" wx:index="{{index}}">
+    <swiper-item class="swiper-item" bindtap='detail' data-imgid='{{item.goods_id}}'>
+      <view class="slide-image {{swiperIndex == index ? 'active' : ''}} yinying" >
+        <image src="https://cottonpadded.cnzcs.com/{{item.goods_images?item.goods_images:''}}" class="imgpage imgrad"  />
+        <view class="weui-flex"> 
+            <view class="weui-flex__item pad10 font16 text-cha font-pf">{{item.goods_name}}</view>
+        </view>
+        <view class="weui-flex"> 
+            <view class="weui-flex__item pad10 font12 text-cha2 font-pf c-rgba1 martop-8" style='height:35px;'>{{item.goods_synopsis}}</view>
+        </view>
+         <view class="weui-flex pad10">
+            <view class="weui-flex__item">
+              <view class="font11 c-rgba2 martop-8 padtop5">
+                <image src='/images/xin_yi.png' class='plimg marrig4'></image>
+                <text class='sctegx'>{{item.goods_collection_num}}收藏</text>
+              </view>
+            </view>
+            <view>
+              <view class="martop-8">
+                <text class='font11 c-rgba2 pltext scstext' wx:if='{{ymnum == 2}}'>热门产品</text>
+              </view>
+            </view>
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

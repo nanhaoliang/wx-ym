@@ -1,0 +1,45 @@
+/* pages/kefupag/kefupag.wxss */
+.pad20{
+  padding: 20px;
+}
+
+.pad30{
+  padding: 30px;
+}
+
+.box{
+  box-shadow:0px 1px 9px 0px rgba(218,218,218,0.5);
+}
+
+.font14{
+  font-size: 14px;
+}
+
+.clred{
+  color: red;
+}
+
+.txtal{
+  text-align: center;
+}
+
+.imagesize{
+  width: 100%;
+  display:flex;                    
+  justify-content: center;        
+}
+
+.imagesize image { 
+  width:144px;
+  height:146px;
+}
+
+.mar5{
+  margin-top: 5px;
+}
+
+.lxkfu{
+  position:absolute;
+  width:100%;
+  bottom:20px;
+}

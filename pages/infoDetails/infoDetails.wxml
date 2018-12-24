@@ -1,0 +1,56 @@
+
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class='page pad16'>
+  <view class='page__title dk-title'></view>
+  <view class="page__bd page__bd_spacing">
+    <view class='dk-show' style='height:{{dkheight}}px;'>
+      <template is="wxParse" data="{{wxParseData:dkcontent.nodes}}"/>
+    </view>
+  </view>
+</view>
+
+<view class="weui-flex martop-11" wx:if='{{ymnum == 2}}'>
+    <view class="padtop-2"><view class="zxpn1"></view></view>
+    <view class="weui-flex__item">
+      <view class="zxpl2 pad07">所有评论<text class='zxpl3 pad07'></text></view>
+    </view>
+</view>
+ 
+<view class='pad16 mar12' wx:for="{{plList}}">
+  <view class="weui-flex martop-11">
+        <view class="weui-flex">
+          <view class="weui-flex__item">
+            <image src='{{item.comment_openid.img_url}}' class='touimg'></image>
+          </view>
+        </view>
+        <view class="weui-flex">
+          <view class="weui-flex__item" class='plname'><view class="pad8-10">{{item.comment_openid.name}}</view></view>
+        </view>
+  </view>
+  <view class="weui-flex">
+      <view class="weui-flex__item"><view class="plneir">{{item.comment_content}}</view></view>
+  </view>
+  <view class='border-pl martop-11'></view>
+</view>
+
+<view class="weui-flex pad16 margin10 marbop-15"  wx:if='{{srku}}'>
+  <view class="weui-flex__item phss" style=''>
+    <input value='{{plnss}}' type='text' password='{{password}}' focus='{{focus}}' confirm-type='{{confirmType}}' class='font15'  placeholder="请输入评论内容" bindconfirm='searchBtn'></input>
+  </view>
+  
+</view>
+<view style='height:30px;'></view>
+
+<!-- 评论图标 -->
+<view class='pltb z-in999' bindtap='pingshu' wx:if='{{ymnum == 2}}'>
+  <image src='/images/plicon.png' class='plicon'></image>
+</view>
+
+<view class='fenxi1 yinying z-in999' wx:if='{{ymnum == 2}}'>
+  <button open-type='share' class='fenxi-but'>分享</button>
+</view>
+
+<view class='pltb1 z-in999'>
+  <image src='{{scimage}}' class='plicon1' bindtap='shoucang'></image>
+</view>

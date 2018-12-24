@@ -1,0 +1,34 @@
+<!--pages/information/information.wxml-->
+<view class="weui-flex marbop-15" wx:for='{{zxList}}'>
+    <view class="weui-flex__item pad16" bindtap='zxdetails' data-zxddId='{{item}}'>
+      <view class="weui-flex">
+        <!-- 标题 -->
+        <view class="weui-flex__item">
+          <!-- 标题 -->
+          <view class="weui-flex pad7-10">
+            <view class="weui-flex__item"><view class="zxtext">{{item.title}}</view></view>
+          </view>
+          <!-- 内容 -->
+          <view class="weui-flex pad7-10">
+            <view class="weui-flex__item">
+              <view class="zxneirong text-cha2">{{item.synopsis}}</view>
+            </view>
+          </view>
+          <!-- 标签 -->
+          <view class="weui-flex pad7-10" wx:if='{{ymnum == 2}}'>
+            <view class="weui-flex__item" ><view class="zxlwen">文章</view></view>
+            <view class="weui-flex__item">
+               <view class="weui-flex" >
+                  <view class="weui-flex__item text-pad"><view class='zxyd text-rig'>{{item.read_num}}<text>已阅读</text></view></view>
+                  <view class="linhei18" >
+                    <image src='/images/GrouCopy2x.png' class='zxplimg'></image>
+                    <text class='zxplnum'>{{item.comment_num}}</text>
+                  </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view style='border-bottom:1px solid #EEEEEE;'></view>
+    </view>
+</view>

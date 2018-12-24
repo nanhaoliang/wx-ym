@@ -1,0 +1,48 @@
+<!--pages/commodity/commodity.wxml-->
+<!-- <view class="weui-flex martop-17">
+  <view class="weui-flex__item pad020">
+    <view class='select_box'>
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text se-col-text'>{{selectData[index].tiele}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='/images/gobottom.png'></image>
+      </view>
+      <view class='option_box pad05' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap' data-type='{{item}}'>{{item.tiele}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="weui-flex__item pad020">
+    <view class="sx-img martop-4" bindtap='sxiclick'>
+      <image src='{{sximage}}' class='sx-img1'></image>
+    </view>
+  </view>
+</view> -->
+
+<!-- 产品列表 -->
+<view class='cpfl100'>
+  <view class="martop-17 cpfl50" wx:for="{{chanpinList}}">
+    <view class="pad10" bindtap='cpdetail' data-cpid='{{item.goods_id}}'>
+      <view class="cplist">
+        <image src='https://cottonpadded.cnzcs.com/{{item.goods_images}}' class='cpimage'></image>
+        <view class="weui-flex">
+          <view class="weui-flex__item">
+            <view class="padle10 cptexts text-cha martop-6">{{item.goods_name}}</view>
+          </view>
+        </view>
+        <view class="weui-flex">
+          <view class="weui-flex__item">
+            <view class="weui-flex">
+              <view class=""> <image src='/images/xin_yi.png' class='cp_images'></image></view>
+              <view class="weui-flex__item">
+                <view class="padle10 cptexts1 text-cha martop-11 fl-le">{{item.goods_collection_num}}
+                  <text class=''>人收藏</text>
+                </view>
+              </view>
+              <!-- <view class="cp_money1 padd10-10 "><text class='cp_money'>￥</text>{{item.goods_price}}</view> -->
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

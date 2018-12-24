@@ -1,0 +1,34 @@
+
+<view class="weui-flex mar5-16 hei121px yinying borrad4">
+    <view class="weui-flex__item">
+      <image src='{{userInfo.avatarUrl}}' class='userimage'></image>
+    </view>
+    <view class="weui-flex__item"><view class="username martop22fe">{{userInfo.nickName}}</view></view>
+</view>
+
+<view class="weui-flex mar30-16 hei58 yinying pad16 borrad4" bindtap='chnpsc' wx:if='{{ymnum == 2}}'>
+    <view class="weui-flex__item">
+      <image src='/images/shop_yi.png' class='myscicon'></image>
+      <text class='cpsctxt'>产品收藏</text>
+    </view>
+    <view class="">
+      <image src='/images/jt.png' class='myscicon'></image>
+    </view>
+</view>
+
+<view class="weui-flex mar5-16 hei58 yinying pad16 borrad4" bindtap='zixunsc' wx:if='{{ymnum == 2}}'>
+    <view class="weui-flex__item">
+      <image src='/images/zixun_yi.png' class='myscicon'></image>
+      <text class='cpsctxt'>资讯收藏</text>
+    </view>
+    <view class="">
+      <image src='/images/jt.png' class='myscicon'></image>
+    </view>
+</view>
+
+
+<view class='lxkfu'>
+  <view class="weui-flex hei45 yinying mar5-16 borrad4">
+    <button bindtap='kefus' class='wth100 backfff'>进入客服会话</button>
+  </view>
+</view>

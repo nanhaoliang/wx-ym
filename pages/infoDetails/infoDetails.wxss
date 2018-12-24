@@ -1,0 +1,106 @@
+/* pages/infoDetails/infoDetails.wxss */
+.lunbos{
+  width: 100%;
+}
+
+.zxtitle{
+  font-size:20px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:25px;
+}
+
+.zxneir{
+  font-size:16px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(133,133,133,1);
+  line-height:20px
+}
+
+.zxyd{
+  font-size:11px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(198,198,198,1);
+  line-height:16px;
+}
+
+.zxpn1{
+  width:6px;
+  height:18px;
+  background:rgba(232,80,39,1);
+  border-radius: 3px;
+}
+
+.zxpl2{
+  font-size:16px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:22px;
+}
+
+.zxpl3{
+  color: #C6C6C6;
+}
+
+.touimg{
+  width:40px;
+  height:40px;
+  border-radius:21px;
+}
+
+.plname{
+  font-size:16px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(133,133,133,1);
+  line-height:20px;
+}
+
+.plneir{
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:20px;
+}
+
+.pltb{
+  width: 55px;
+  height: 55px;
+  background: rgba(255,255,255,1);
+  box-shadow:0 0 10px #D1D1D1;
+  border-radius:36px;
+  position:fixed;
+  bottom:52px;
+  right:12px;
+}
+
+.pltb1{
+  width: 55px;
+  height: 55px;
+  border-radius:36px;
+  position:fixed;
+  bottom:190px;
+  right:12px;
+}
+
+.plicon{
+  width:31px;
+  height:28px;
+  margin:29% 0 0px 22%;
+}
+
+.plicon1{
+  width:60px;
+  height:60px;
+}
+
+.phss{
+  height:34px;
+  border:1px solid #eee;
+  padding:10px;
+}

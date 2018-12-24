@@ -1,0 +1,112 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wxd6940691589bd5f6",
+	"projectname": "wx",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "mypage",
+					"pathName": "pages/mypage/mypage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "demo",
+					"pathName": "pages/demo/demo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "logi",
+					"pathName": "pages/logs/logs",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品",
+					"pathName": "pages/commodity/commodity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "资讯",
+					"pathName": "pages/information/information",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wode",
+					"pathName": "pages/mypage/mypage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/commDetails/commDetails",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "资讯详情",
+					"pathName": "pages/infoDetails/infoDetails",
+					"query": "zxid=1"
+				},
+				{
+					"id": -1,
+					"name": "产品收藏",
+					"pathName": "pages/commsc/commsc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "资讯收藏",
+					"pathName": "pages/inforsc/inforsc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客服",
+					"pathName": "pages/kefupag/kefupag"
+				}
+			]
+		}
+	}
+}

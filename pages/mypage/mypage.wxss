@@ -1,0 +1,59 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.userimage{
+  width: 80px;
+  height: 80px;
+  border-radius: 41px;
+  margin: 10%;
+}
+
+.username{
+  font-size:20px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:28px;
+}
+
+.myscicon{
+  width: 25px;
+  height: 25px;
+  margin-top: 16px;
+}
+
+.cpsctxt{
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(133,133,133,1);
+  line-height:20px;
+  position:relative;
+  bottom:12%;
+  left:3%;
+}
+
+.lxkfu{
+  position:absolute;
+  width:100%;
+  bottom:20px;
+}

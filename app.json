@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mypage/mypage",
+    "pages/commodity/commodity",
+    "pages/information/information",
+    "pages/commDetails/commDetails",
+    "pages/commsc/commsc",
+    "pages/infoDetails/infoDetails",
+    "pages/inforsc/inforsc",
+    "pages/kefupag/kefupag"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "沂蒙小棉袄",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#E85027",
+    "backgroundColor":"#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_wei.png",
+        "selectedIconPath": "images/index_yi.png"
+      },
+      {
+        "pagePath": "pages/commodity/commodity",
+        "text": "棉袄",
+        "iconPath": "images/shop_wei1.png",
+        "selectedIconPath": "images/shop_yi1.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "动态",
+        "iconPath": "images/zixun_wei.png",
+        "selectedIconPath": "images/zixun_yi.png"
+      },
+      {
+        "pagePath": "pages/mypage/mypage",
+        "text": "我的",
+        "iconPath": "images/my_wei.png",
+        "selectedIconPath": "images/my_yi.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

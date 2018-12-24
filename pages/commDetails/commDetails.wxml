@@ -1,0 +1,40 @@
+<!--pages/commDetails/commDetails.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:306px;' indicator-active-color="{{indicatorcolor}}" circular="{{circular}}" >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image lunbos" style='height:100%;' bindtap="imgbind" data-imgurl='{{item}}' data-imgurllist='{{imgUrls}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="weui-flex pad16 martop-8">
+    <view class="weui-flex__item ">
+       <view class="weui-flex ">
+            <view class="weui-flex__item "><view class="cpxqtitle text-cha">{{cpdetails.goods_name}}</view></view>
+        </view>
+        <view class="weui-flex martop-11">
+            <view class="weui-flex__item">
+              <view class="cpxqmoney1 padtop5" wx:if='{{ymnum == 2}}'>
+                <text class='cpxqmoney '>￥</text>{{cpdetails.goods_price}}
+                <text class='cpshouc'>{{cpdetails.goods_collection_num}}</text><text class='cpshouc'>人收藏</text>
+              </view>
+            </view>
+        </view>
+    </view>
+    <!-- 收藏 -->
+    <view class="pad16">
+      <image src='{{scimage}}' class='scpng' bindtap='shoucang'></image>
+    </view>
+</view>
+
+<!-- 产品内容 -->
+ <view class="weui-flex pad16 martop-5">
+    <view class="weui-flex__item">
+      <view class="cpneirong">{{cpdetails.goods_synopsis}}</view>
+    </view>
+</view>
+
+<view class='fenxi yinying' wx:if='{{ymnum == 2}}'>
+  <button open-type='share' class='fenxi-but'>分享</button>
+</view>
+

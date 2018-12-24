@@ -1,0 +1,27 @@
+<!--pages/kefupag/kefupag.wxml-->
+<view class="weui-flex pad30">
+    <view class="weui-flex__item box">
+
+      <view class="weui-flex pad20">
+          <view class="imagesize">
+            <image class='' src='https://cottonpadded.cnzcs.com/img/gzh.jpeg' bindtap="imgbind"></image>
+          </view>
+        </view>
+
+        <view class="weui-flex pad20">
+          <view class="weui-flex__item font14">
+            <view class='txtal mar5'>点击图长按保存</view>
+            <view class='txtal mar5'>关注“<text class='clred'>千年古针线手艺</text>”公众号</view>
+            <view class='txtal mar5'>点击客服分享您喜欢的棉袄进行购买</view>
+          </view>
+        </view>
+
+    </view>
+</view>
+
+
+<view class='lxkfu'>
+  <view class="weui-flex hei45 yinying mar5-16 borrad4">
+    <button open-type="contact" class='wth100 backfff' >进入客服会话</button>
+  </view>
+</view>
